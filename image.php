@@ -36,3 +36,5 @@
 
     <p>Každý pokus ukáže větší část obrázku.</p>
 </div>
+
+<?php include_once 'components/footer.php' ?>

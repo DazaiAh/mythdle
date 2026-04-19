@@ -2,7 +2,8 @@ const pageMap = {
     classic: 'classic.php',
     image: 'image.php',
     emoji: 'emoji.php',
-    cheatsheet: 'cheatsheet.php'
+    cheatsheet: 'cheatsheet.php',
+    about: 'about.php'
 };
 
 const pageInitMap = {

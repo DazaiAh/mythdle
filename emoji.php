@@ -31,3 +31,5 @@
 
     <p>Každý pokus odhalí další emoji.</p>
 </div>
+
+<?php include_once 'components/footer.php' ?>

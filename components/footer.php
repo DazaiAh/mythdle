@@ -1,0 +1,1 @@
+<p style="text-align: center;margin-top: 20px;">Vytvořila <strong>Natálie Fikarová</strong> • <a href="https://github.com/dazaiah/mythdle" target="_blank" style="color: white;">GitHub</a> •  <a href="about" style="color: white;">o Mythdle</a></p>

@@ -40,3 +40,5 @@
         <tbody id="tableBody"></tbody>
     </table>
 </div>
+
+<?php include_once 'components/footer.php' ?>

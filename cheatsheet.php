@@ -55,3 +55,5 @@ $characters = getCharacterList($conn);
 
     <button type="button" class="btn-circle" id="slider-next"><img src="assets/images/submit.svg"></button>
 </div>
+
+<?php include_once 'components/footer.php' ?>
