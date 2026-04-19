@@ -1,0 +1,133 @@
+button {
+    padding: 1rem;
+}
+
+.btn-menu {
+    font-family: "MedievalSharp", monospace;
+    border: 0;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    background-image: url(../assets/images/menu_button.svg);
+    transition: 0.25s ease transform, 0.25s ease filter, 0.25s ease color;
+    max-width: 500px;
+    filter: brightness(0.8);
+    cursor: url("../assets/images/cursor_hover.svg") 0 0, pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.btn-menu:hover {
+    filter: brightness(1)
+        drop-shadow(0 0 6px rgba(144, 32, 218, 0.7))
+        drop-shadow(0 0 18px rgba(132, 0, 255, 0.5));
+    transform: translateX(2rem);
+    color: #ab7bca;
+}
+
+.btn-menu::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;   /* Makes image fit inside the box */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers image inside the box */
+    position: absolute;
+    left: 90px;
+}
+
+.btn-menu[data-page="classic"]::before {
+    background-image: url(../assets/images/icons/classic.svg);
+}
+
+.btn-menu[data-page="image"]::before {
+    background-image: url(../assets/images/icons/picture.svg);
+}
+
+.btn-menu[data-page="emoji"]::before {
+    background-image: url(../assets/images/icons/emoji.svg);
+}
+
+.btn-menu[data-page="cheatsheet"]::before {
+    background-image: url(../assets/images/icons/credits.svg);
+}
+
+.btn-circle {
+    width: 82px;
+    height: 82px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/images/circle.svg);
+    border: 0;
+    cursor: url("../assets/images/cursor_hover.svg") 0 0, pointer;
+    margin: 0.5rem;
+    filter: brightness(0.8);
+    transition: 0.25s ease transform, 0.25s ease filter, 0.25s ease color;
+}
+
+.btn-circle:hover, .btn-circle.active, .btn-submit:hover,  .btn-close-text:hover {
+    filter: brightness(1)
+        drop-shadow(0 0 6px rgba(32, 218, 156, 0.7))
+        drop-shadow(0 0 18px rgba(0, 255, 157, 0.5));
+    color: goldenrod;
+}
+
+.btn-circle.active {
+    filter: brightness(0.8)         
+        drop-shadow(0 0 6px rgba(32, 218, 156, 0.7))
+        drop-shadow(0 0 18px rgba(0, 255, 157, 0.5));
+}
+
+.btn-circle img {
+    width: 60%;
+}
+
+.btn-submit {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/images/submit.svg);
+    border: 0;
+    cursor: url("../assets/images/cursor_hover.svg") 0 0, pointer;
+    margin-left: -1rem;
+    filter: brightness(0.6);
+    transition: 0.25s ease transform, 0.25s ease filter, 0.25s ease color;
+}
+
+.btn-close-text {
+    font-family: "MedievalSharp", monospace;
+    border: 0;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 1rem;
+    font-size: 1.25rem;
+    background-image: url(../assets/images/title.svg);
+    transition: 0.25s ease transform, 0.25s ease filter, 0.25s ease color;
+    max-width: 200px;
+    filter: brightness(0.8);
+    cursor: url("../assets/images/cursor_hover.svg") 0 0, pointer;
+    position: relative;
+}
+
+.btn-close-text:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+  .btn-menu::before {
+    width: 24px;
+    height: 28px;
+    left: 50px;
+  }
+}

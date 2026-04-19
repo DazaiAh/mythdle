@@ -1,0 +1,84 @@
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-duration: 1s;
+}
+
+.bg-red {
+    background-color: #c7323244;
+    /*border: 4px solid #c73232;*/
+}
+
+.bg-orange {
+    background-color: #c79332cc;
+}
+
+.bg-green {
+    /*border: 4px solid #c73232;*/
+    background-color: #23920dcc;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-big {
+    font-size: 52px;
+    margin: 0;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flashBrightness {
+  0%   { filter: brightness(1); }
+  50%  { filter: brightness(2); }
+  100% { filter: brightness(1); }
+}
+
+.flash {
+  animation: flashBrightness 0.8s ease;
+}
+
+@media (max-width: 768px) {
+  .hide-phone {
+    display: none;
+  }
+  .flex-column-phone {
+    flex-direction: column;
+  }
+}

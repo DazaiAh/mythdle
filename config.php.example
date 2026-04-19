@@ -1,0 +1,6 @@
+<?php
+
+$DB_HOST = ""; // Host
+$DB_USER = ""; // Jméno
+$DB_PASS = ""; // Heslo
+$DB_DATA = ""; // Databáze

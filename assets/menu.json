@@ -1,0 +1,59 @@
+{
+  "welcome": {
+    "title": "Welcome",
+    "description": [
+      "Vítej u různých hádanek o slovanských bytostech.",
+      "Na levé straně si vyber režim a začni hádat."
+    ]
+  },
+
+  "classic": {
+    "title": "Klasický",
+    "description": [
+      "Klasika kterou všichni znají a možná mají rádi.",
+      "Uhádni bytost podle různých atributů. Zeleně vyznačené pole jsou uhodnuty správně a červené špatně."
+    ],
+    "hints": [
+      {
+        "icon": "assets/images/icons/picture.svg",
+        "text": "Po <strong>7 pokusech</strong> hádání dostaneš nápovědu na danou bytost."
+      }
+    ]
+  },
+
+  "image": {
+    "title": "Obrázek",
+    "description": [
+      "Uhádni bytost podle pomalu se oddalovacího se obrázku.",
+      "Každý pokus odhalí kousek obrázku."
+    ],
+    "hints": [
+      {
+        "icon": "assets/images/icons/picture.svg",
+        "text": "Po <strong>5</strong> pokusech se odhalí velká část obrázku."
+      }
+    ]
+  },
+
+  "emoji": {
+    "title": "Emoji",
+    "description": [
+      "Uhádni bytost podle Emoji.",
+      "Každé emoji poukazuje na něco co se týče bytosti."
+    ],
+    "hints": [
+      {
+        "icon": "assets/images/icons/emoji.svg",
+        "text": "Po <strong>6 pokusech</strong> dostaneš nápovědu na bytost."
+      }
+    ]
+  },
+
+  "cheatsheet": {
+    "title": "Pomůcky",
+    "description": [
+      "Seznam postav a jejich vlastností, skvělá pomůcka pro nové hráče.",
+      "Můžete ji použit i na přesné uhodnutí, ale to už není taková zábava."
+    ]
+  }
+}

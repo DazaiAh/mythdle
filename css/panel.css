@@ -1,0 +1,73 @@
+.panel {
+    background-color: #FFFFFF99;
+}
+
+.panel-40 {
+    width: 40%;
+}
+
+.panel-60 {
+    width: 60%;
+}
+
+.panel-80 {
+    width: 80%;
+}
+
+.panel-100 {
+    width: 100%;
+}
+
+.box {
+  position: relative;
+  box-shadow: inset 0 0 125px var(--purple-transparent), inset 0 0 200px black, 0 0 50px var(--purple-transparent);
+  background-color: #0006;
+  font-size: 20px;
+}
+
+.corner {
+  position: absolute;
+  width: 48px;   /* size of your SVG */
+  height: 48px;
+  opacity: 0.75;
+  z-index: 2;
+}
+
+/* Specific corners with rotation */
+.top-left {
+  top: -10px;
+  left: -10px;
+  transform: rotate(90deg);
+}
+
+.top-right {
+  top: -10px;
+  right: -10px;
+  transform: rotate(180deg);
+}
+
+.bottom-right {
+  bottom: -10px;
+  right: -10px;
+  transform: rotate(270deg);
+}
+
+.bottom-left {
+  bottom: -10px;
+  left: -10px;
+  transform: rotate(0deg);
+}
+
+#emojiList {
+    background: rgba(16, 11, 20, 0.8);
+    border-radius: 1em;
+    padding: 0.5em;
+    max-width: max-content;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+  .panel-40, .panel-60, .panel-80 {
+    width: 100%;
+  }
+}

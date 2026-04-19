@@ -1,0 +1,22 @@
+input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    padding: 1.5rem;
+    font-family: inherit;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    width: 300px;
+    background-image: url(../assets/images/rotatedmenubtn.svg);
+    background-size: contain;
+    background-position: start center;
+    filter:brightness(0.8);
+    transition: 0.35s ease filter;
+}
+
+input[type="text"]:focus {
+    outline: none;
+        filter: brightness(1)
+        drop-shadow(0 0 6px rgba(144, 32, 218, 0.7))
+        drop-shadow(0 0 18px rgba(132, 0, 255, 0.5));
+}
